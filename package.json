@@ -1,5 +1,5 @@
 {
-  "name": "team-seven",
+  "name": "comp229-f2020-week6",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -42,13 +42,13 @@
     "@types/passport-local": "^1.0.33",
     "@types/passport-local-mongoose": "^4.0.13"
   },
-  "description": "team-seven",
+  "description": "A demo app for COMP229 Week 6",
   "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tsiliopoulos/COMP229-F2020-Lesson6.git"
   },
-  "author": "team-seven",
+  "author": "Tom Tsiliopoulos",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tsiliopoulos/COMP229-F2020-Lesson6/issues"
