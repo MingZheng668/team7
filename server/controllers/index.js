@@ -15,21 +15,6 @@ module.exports.displayHomePage = (req, res, next) => {
     res.render('index', {title: 'Home', displayName: req.user ? req.user.displayName : ''});
 }
 
-module.exports.displayAboutPage = (req, res, next) => {
-    res.render('index', { title: 'About', displayName: req.user ? req.user.displayName : ''});
-}
-
-module.exports.displayProductsPage = (req, res, next) => {
-    res.render('index', { title: 'Products', displayName: req.user ? req.user.displayName : ''});
-}
-
-module.exports.displayServicesPage = (req, res, next) => {
-    res.render('index', { title: 'Services', displayName: req.user ? req.user.displayName : ''});
-}
-
-module.exports.displayContactPage = (req, res, next) => {
-    res.render('index', { title: 'Contact', displayName: req.user ? req.user.displayName : ''});
-}
 
 module.exports.displayLoginPage = (req, res, next) => {
     // check if the user is already logged in
@@ -81,14 +66,7 @@ module.exports.processLoginPage = (req, res, next) => {
                 expiresIn: 604800 // 1 week
             });
 
-            /* TODO - Getting Ready to convert to API
-            res.json({success: true, msg: 'User Logged in Successfully!', user: {
-                id: user._id,
-                displayName: user.displayName,
-                username: user.username,
-                email: user.email
-            }, token: authToken});
-            */
+        
 
             return res.redirect('/book-list');
         });
@@ -142,13 +120,7 @@ module.exports.processRegisterPage = (req, res, next) => {
         }
         else
         {
-            // if no error exists, then registration is successful
-
-            // redirect the user and authenticate them
-
-            /* TODO - Getting Ready to convert to API
-            res.json({success: true, msg: 'User Registered Successfully!'});
-            */
+           
 
             return passport.authenticate('local')(req, res, () => {
                 res.redirect('/book-list')
