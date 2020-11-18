@@ -1,5 +1,5 @@
 {
-  "name": "comp229-f2020-week6",
+  "name": "team-seven",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -46,12 +46,12 @@
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tsiliopoulos/COMP229-F2020-Lesson6.git"
+    "url": "git+https://github.com/MingZheng668/Team-Seven.git"
   },
   "author": "Tom Tsiliopoulos",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tsiliopoulos/COMP229-F2020-Lesson6/issues"
+    "url": "https://github.com/MingZheng668/Team-Seven.git/issues"
   },
-  "homepage": "https://github.com/tsiliopoulos/COMP229-F2020-Lesson6#readme"
+  "homepage": "https://github.com/MingZheng668/Team-Seven.git#readme"
 }
