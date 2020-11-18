@@ -28,7 +28,7 @@
     "node": "^10.15.0",
     "npm": "^6.0.0"
   },
-  "description": "## Welcome to the MidTerm Project - the Favourite Book List App",
+  "description": "team-seven",
   "main": "server.js",
   "devDependencies": {
     "@types/body-parser": "^1.19.0",
@@ -52,7 +52,7 @@
     "ExpressJS",
     "EJS"
   ],
-  "author": "Your Name Goes Here",
+  "author": "Team-seven",
   "license": "ISC",
   "homepage": ""
 }
