@@ -1,5 +1,5 @@
 {
-  "name": "comp229-f2020-week6",
+  "name": "teamseven",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -41,6 +41,17 @@
     "@types/passport-jwt": "^3.0.3",
     "@types/passport-local": "^1.0.33",
     "@types/passport-local-mongoose": "^4.0.13"
-  }
- 
+  },
+  "description": "teamSeven",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MingZheng668/team7.git"
+  },
+  "author": "Tom Tsiliopoulos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MingZheng668/team7/issues"
+  },
+  "homepage": "https://github.com/MingZheng668/team7#readme"
 }
