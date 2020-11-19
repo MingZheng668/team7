@@ -28,6 +28,7 @@ router.get('/add', requireAuth, bookController.displayAddPage);
 /* POST Route for processing the Add page - CREATE Operation */
 router.post('/add', requireAuth, bookController.processAddPage);
 
+
 /* GET Route for displaying the Edit page - UPDATE Operation */
 router.get('/edit/:id', requireAuth, bookController.displayEditPage);
 

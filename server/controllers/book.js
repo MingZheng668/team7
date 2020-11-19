@@ -33,8 +33,10 @@ module.exports.displayAddPage = (req, res, next) => {
 module.exports.processAddPage = (req, res, next) => {
     let newBook = Book({
         "name": req.body.name,
-        "question": req.body.question,
-        "answer": req.body.answer,
+        "description": req.body.description,
+        "published": req.body.published,
+        "start": req.body.start,
+        "end": req.body.end,
         
     });
 
@@ -77,8 +79,10 @@ module.exports.processEditPage = (req, res, next) => {
     let updatedBook = Book({
         "_id": id,
         "name": req.body.name,
-        "question": req.body.question,
-        "answer": req.body.answer,
+       "description": req.body.description,
+        "published": req.body.published,
+        "start": req.body.start,
+        "end": req.body.end,
      
     });
 

@@ -3,8 +3,10 @@ let mongoose = require('mongoose');
 // create a model class
 let bookModel = mongoose.Schema({
     name: String,
-    question:String,
-    answer:String,
+    description:String,
+    published:String,
+    start:String,
+    end:String,
 },
 {
     collection: "books"

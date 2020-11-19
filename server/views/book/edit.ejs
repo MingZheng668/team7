@@ -20,22 +20,42 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="questionTextField">Question</label>
+                    <label for="descriptionTextField">Description</label>
                     <input type="text" class="form-control"
-                    id="questionTextField"
-                    placeholder="Enter Question"
-                    name="question" 
-                    value="<%= book.question %>"
+                    id="descriptionTextField"
+                    placeholder="Enter the description"
+                    name="description" 
+                    value="<%= book.description %>"
                     required>
                 </div>
 
                   <div class="form-group">
-                    <label for="answerTextField">Answer</label>
+                    <label for="publishedTextField">Published Date</label>
                     <input type="text" class="form-control"
-                    id="answerTextField"
-                    placeholder="Enter Answer"
-                    name="answer" 
-                    value="<%= book.answer %>"
+                    id="publishedTextField"
+                    placeholder="Enter the Published Date"
+                    name="published" 
+                    value="<%= book.published %>"
+                    required>
+                </div>
+
+                 <div class="form-group">
+                    <label for="startTextField">Start Date</label>
+                    <input type="text" class="form-control"
+                    id="startTextField"
+                    placeholder="Enter the Start Date(yy-mm-dd)"
+                    name="start" 
+                    value="<%= book.start %>"
+                    required>
+                </div>
+
+                 <div class="form-group">
+                    <label for="endTextField">End Date</label>
+                    <input type="text" class="form-control"
+                    id="endTextField"
+                    placeholder="Enter the End Date(yy-mm-dd)"
+                    name="end" 
+                    value="<%= book.end %>"
                     required>
                 </div>
 
