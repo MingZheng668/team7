@@ -1,3 +1,158 @@
+<%- include ../partials/header.ejs %>
 
+<%- include ../partials/main_nav.ejs %>
+
+
+<body style="font-family: Arial, Helvetica, sans-serif;
+	color: gray;
+	background-repeat: repeat;
+	background-color: #F4FFE5;">
+<div id="allPage" style="width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	border: medium solid #3E5702;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px gray;
+	padding: 6px;
+	color: #000000;">
+<header>
+	<h1><a href="https://www.centennialcollege.ca/">
+	<img alt="college" height="186" src="/Assets/images/dsa.jpg" width="960" class="auto-style1"></a></h1>
+	<h2><span lang="zh-cn">CENTENNIAL COLLEGE</span>&nbsp;</h2>
 	<h3>Continuing Education Course/Instrutor Evaluation</h3>
 	
+</header>
+<main>	
+<form action="mailto:mzheng22@my.centennialcollege.ca" method="post">
+	<label>Course Name/Code:<select name="txtName" tabindex="1">
+	<option></option>
+	<option value="COMM 171 ">COMM 171-College Communications 2 (ESL)</option>
+	<option value="COMP 214 ">COMP 214-Advanced Database Concepts </option>
+	<option value="COMP 228 ">COMP 228-Java Programming</option>
+	<option value="COMP 229 ">COMP 229-Web Application Development</option>
+	<option value="GNED 500 ">GNED 500-Global Citizenship</option>
+	</select><br></label><br>
+	<label>Semester:<input checked="checked" name="optSem" type="radio" tabindex="3" value="Fall">Fall
+	<input name="optSem" type="radio" tabindex="5" value="Winter">Winter
+	<input name="optSem" type="radio" tabindex="7" value="spring">Spring/Summer&nbsp; 
+	Year:<select name="txtYear" tabindex="9">
+	<option></option>
+	<option>2019</option>
+	<option>2020</option>
+	<option>2021</option>
+	<option>2022</option>
+	<option>2023</option>
+	</select><br></label><br>
+	<label>Instructor:<select name="txtInstructor" tabindex="11">
+	<option></option>
+	<option>Jack</option>
+	<option>Harry</option>
+	<option>Charlie</option>
+	<option>Olivia</option>
+	<option>Sophie</option>
+	</select></label><br>
+	<fieldset>
+<legend>Instructor</legend>
+	<label>How would you rate the instructor's:</label><br><label>1. knowledge of subject?</label><br>
+	<input checked="checked" name="optSubject" type="radio" tabindex="13" value="exc" style="height: 20px">(a)Excellent
+	<input name="optSubject" type="radio" tabindex="15" value="Good">(b)Good
+	<input name="optSubject" type="radio" tabindex="17" value="Fair">(c)Fair
+	<input name="optSubject" type="radio" tabindex="19" value="NotSat">(d)Not Satisfactory<br><br>
+	
+	<label>2.helpfulness?</label><br>
+	<input checked="checked" name="optHelp" type="radio" tabindex="21" value="Exc">(a)Excellent
+	<input name="optHelp" type="radio" tabindex="23" value="Good">(b)Good
+	<input name="optHelp" type="radio" tabindex="25" value="Fair">(c)Fair
+	<input name="optHelp" type="radio" tabindex="27" value="NotSat">(d)Not Satisfactory<br><br>
+
+	<label>3.courtesy and respect for all students?</label><br>
+	<input checked="checked" name="optCour" type="radio" tabindex="29" value="Exc">(a)Excellent
+	<input name="optCour" type="radio" tabindex="31" value="Good">(b)Good
+	<input name="optCour" type="radio" tabindex="33" value="Fair">(c)Fair
+	<input name="optCour" type="radio" tabindex="35" value="NotSat">(d)Not Satisfactory<br><br>
+	
+	<label>4.communication skills?</label><br>
+	<input checked="checked" name="optComm" type="radio" tabindex="37" value="Exc">(a)Excellent
+	<input name="optComm" type="radio" tabindex="39" value="Good">(b)Good
+	<input name="optComm" type="radio" tabindex="41" value="Fair">(c)Fair
+	<input name="optComm" type="radio" tabindex="43" value="NotSat">(d)Not Satisfactory<br><br>
+
+	<label>5.overall performance?</label><br>
+	<input checked="checked" name="optOver" type="radio" tabindex="45" value="Exc">(a)Excellent
+	<input name="optOver" type="radio" tabindex="47" value="Good">(b)Good
+	<input name="optOver" type="radio" tabindex="49" value="Fair">(c)Fair
+	<input name="optOver" type="radio" tabindex="51" value="NotSat">(d)Not Satisfactory<br>
+
+</fieldset>
+<fieldset>
+<legend>COURSE</legend>
+	<label>6.How would you rate the course materials?</label><br>
+	<input checked="checked" name="optMater" type="radio" tabindex="53" value="Exc">(a)Excellent
+	<input name="optMater" type="radio" tabindex="55" value="Good">(b)Good
+	<input name="optMater" type="radio" tabindex="57" value="Fair">(c)Fair
+	<input name="optMater" type="radio" tabindex="59" value="NotSat">(d)Not Satisfactory<br><br>
+	
+	<label>7.How much did this course meet your expectations?</label><br>
+	<input checked="checked" name="optExpec" type="radio" tabindex="61" value="Exc">(a)Excellent
+	<input name="optExpec" type="radio" tabindex="63" value="Good">(b)Good
+	<input name="optExpec" type="radio" tabindex="65" value="Fair">(c)Fair
+	<input name="optExpec" type="radio" tabindex="67" value="NotSat">(d)Not Satisfactory<br><br>
+
+	<label>8.How would you rate this course(overall)?</label><br>
+	<input checked="checked" name="optOverall" type="radio" tabindex="69" value="Exc">(a)Excellent
+	<input name="optOverall" type="radio" tabindex="71" value="Good">(b)Good
+	<input name="optOverall" type="radio" tabindex="73" value="Fair">(c)Fair
+	<input name="optOverall" type="radio" tabindex="75" value="NotSat">(d)Not Satisfactory<br>
+	
+</fieldset>
+<fieldset>
+<legend>GENERAL INFORMATION</legend>
+	<label>9.Was the course outline reviewed/explained at the beginning of your course?</label><br>
+	<input checked="checked" name="optGenral" type="radio" tabindex="77" value="Yes">(a)Yes
+	<input name="optGenral" type="radio" tabindex="79" value="No">(b)No
+	<input name="optGenral" type="radio" tabindex="81" value="NotSure">(c)Not Sure<br><br>
+	
+	<label>10.Would you recommend this course to a friend with the same interests?</label><br>
+	<input checked="checked" name="optInformation" type="radio" tabindex="83" value="Yes">(a)Yes
+	<input name="optInformation" type="radio" tabindex="85" value="No">(b)No
+	<input name="optInformation" type="radio" tabindex="87" value="NotSure">(c)Not Sure<br>
+</fieldset>
+<fieldset>
+<legend>ANY OTHER COMMENTS</legend>
+	<label>11.What is the best thing about this course?<br>
+	<textarea cols="50" name="txtThings" rows="5" tabindex="89"></textarea><br></label><br>
+	<label>12.How could we improve this course?<br>
+	<textarea cols="50" name="txtImprove" rows="5" tabindex="91"></textarea><br></label><br>
+	<label>13.Other:<br>
+	<textarea cols="50" name="txtOther" rows="5" tabindex="93"></textarea></label>
+<label>
+	<span lang="zh-cn"><br><br></span>
+	
+	<span lang="zh-cn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>
+	</label> <br>
+	 <input name="btnSubmit" tabindex="95" type="submit" value="Register Now">
+	<input name="btnReset" tabindex="97" type="reset" value="Clear Form">
+                  
+	<br><br>
+	<a href="#top" class="btn btn-primary btn-sm">
+    <i class="fas fa-pencil-alt"></i> Go Top</a>
+	
+
+</fieldset>
+
+<br>
+
+</form>
+<p>Thank you! We pay attention to your feedback!</p>
+	<p>Web: <a href="https://www.centennialcollege.ca/">www.centennailcollege.ca</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	Email: <a href="mailto:admissions@centennialcollege.ca">
+	admissions@centennialcollege.ca</a></p>
+</main>
+</div>
+</body>
+
+	
+<%- include ../partials/bottom_nav.ejs %>  
+
+<%- include ../partials/footer.ejs %>

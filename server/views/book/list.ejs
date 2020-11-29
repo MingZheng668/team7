@@ -7,11 +7,11 @@
   <main class="container">
     <div class="row">
         <div class="offset-md-1 col-md-11">
-            <h1>Favourite Survey List</h1>
+            <h1>Education Course Evaluation</h1>
             <a>Welcome to Team Se7en's survey site. You, as a user, can create, update, and delete a survey of your own.</a><br><br>
             <% if(typeof displayName == 'string' && displayName) { %>
                 <a href="/book-list/add" class="btn btn-primary" role="button">
-                <i class="fas fa-plus-circle"></i>Favourite Survey List</a>
+                <i class="fas fa-plus-circle"></i>Add User List</a>
             <% } %>
             <br>
             <table class="table table-bordered table-striped table-hover">
@@ -19,18 +19,20 @@
                 <tr class="d-flex">
                     <% if(typeof displayName == 'string' && displayName) { %>
                         <th class="text-center col-1">Name</th>
-                        <th class="text-center col-4">Description</th> 
-                        <th class="text-center col-2">Published</th>   
-                        <th class="text-center col-1">Start</th> 
-                        <th class="text-center col-1">End</th>    
+                        
+                        <th class="text-center col-2">Student Id</th>  
+                        <th class="text-center col-2">Programs</th>   
+                        <th class="text-center col-2">Start</th> 
+                        <th class="text-center col-2">End</th>    
                          
                         
                     <% } else { %>
                         <th class="text-center col-1">Name</th>
-                        <th class="text-center col-4">Description</th> 
-                        <th class="text-center col-2">Published</th>   
-                        <th class="text-center col-1">Start</th> 
-                        <th class="text-center col-1">End</th>
+                        
+                        <th class="text-center col-2">Student Id</th>   
+                         <th class="text-center col-2">Programs</th>  
+                        <th class="text-center col-2">Start</th> 
+                        <th class="text-center col-2">End</th>
                          
                       
                     <% } %>
@@ -41,14 +43,14 @@
                 <% for(let count = 0; count < BookList.length; count++) { %>
                     <tr class="d-flex">
                         <% if(typeof displayName == 'string' && displayName) { %>
-                            <td class="text-center col-1"><%= BookList[count].name %></td>
-                            <td class="text-center col-4"><%= BookList[count].description %></td>
-                             <td class="text-center col-2"><%= BookList[count].published %></td>
-                             <td class="text-center col-1"><%= BookList[count].start %></td>
-                             <td class="text-center col-1"><%= BookList[count].end %></td>
+                            <td class="text-center col-1"><%= BookList[count].name %></td>                          
+                             <td class="text-center col-2"><%= BookList[count].studentId %></td>
+                             <td class="text-center col-2"><%= BookList[count].program %></td>
+                             <td class="text-center col-2"><%= BookList[count].start %></td>
+                             <td class="text-center col-2"><%= BookList[count].end %></td>
 
                              <td class="text-center col-1">
-                                <a href="/book-list/edit/<%= BookList[count]._id %>" class="btn btn-primary btn-sm">
+                                <a href="/book-list/take" class="btn btn-primary btn-sm">
                                  <i class="fas fa-user-edit"></i> Take Survey</a>
                             </td>
                                     
@@ -62,10 +64,10 @@
                             </td>
                          <% } else { %>
                             <td class="text-center col-1"><%= BookList[count].name %></td>
-                            <td class="text-center col-4"><%= BookList[count].description %></td>
-                            <td class="text-center col-2"><%= BookList[count].published %></td>
-                            <td class="text-center col-1"><%= BookList[count].start %></td>
-                            <td class="text-center col-1"><%= BookList[count].end %></td>
+                            <td class="text-center col-2"><%= BookList[count].studentId %></td>
+                            <td class="text-center col-2"><%= BookList[count].program %></td>
+                            <td class="text-center col-2"><%= BookList[count].start %></td>
+                            <td class="text-center col-2"><%= BookList[count].end %></td>
                             
                          <% } %>
                     </tr>
@@ -74,6 +76,7 @@
         </div>
     </div>
   </main>
+ 
   
 <%- include ../partials/bottom_nav.ejs %>  
 

@@ -25,6 +25,9 @@ router.get('/', bookController.displayBookList);
 /* GET Route for displaying the Add page - CREATE Operation */
 router.get('/add', requireAuth, bookController.displayAddPage);
 
+router.get('/take', requireAuth, bookController.displaySurveyPage);
+
+
 /* POST Route for processing the Add page - CREATE Operation */
 router.post('/add', requireAuth, bookController.processAddPage);
 

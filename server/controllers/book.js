@@ -25,6 +25,10 @@ module.exports.displayBookList = (req, res, next) => {
     });
 }
 
+module.exports.displaySurveyPage = (req, res, next) => {
+    res.render('book/take', {title: 'Add Survey List', 
+    displayName: req.user ? req.user.displayName : ''})          
+}
 module.exports.displayAddPage = (req, res, next) => {
     res.render('book/add', {title: 'Add Survey List', 
     displayName: req.user ? req.user.displayName : ''})          
@@ -33,8 +37,8 @@ module.exports.displayAddPage = (req, res, next) => {
 module.exports.processAddPage = (req, res, next) => {
     let newBook = Book({
         "name": req.body.name,
-        "description": req.body.description,
-        "published": req.body.published,
+        "studentId": req.body.studentId,
+        "program": req.body.program,
         "start": req.body.start,
         "end": req.body.end,
         
@@ -54,6 +58,8 @@ module.exports.processAddPage = (req, res, next) => {
     });
 
 }
+
+
 
 module.exports.displayEditPage = (req, res, next) => {
     let id = req.params.id;
@@ -79,8 +85,8 @@ module.exports.processEditPage = (req, res, next) => {
     let updatedBook = Book({
         "_id": id,
         "name": req.body.name,
-       "description": req.body.description,
-        "published": req.body.published,
+        "studentId": req.body.studentId,
+        "program": req.body.program,
         "start": req.body.start,
         "end": req.body.end,
      
